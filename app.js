@@ -20,7 +20,7 @@ fetch('https://www.themealdb.com/api/json/v1/1/random.php')
 
 const searchForm = document.querySelector('form');
 searchForm.addEventListener('submit', function (event) {
-    event.preventDefault(); r
+    event.preventDefault(); 
 
     const searchbarText = document.getElementById("search-barr").value;
     
