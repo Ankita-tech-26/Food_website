@@ -74,9 +74,9 @@ p {
 }
 
 .meall {
-    display: flex;
     width: 300px; 
     height: 250px;
+    display: flex;
     margin-right: 20px;
     margin-bottom: 20px; 
     box-sizing: border-box;
@@ -85,18 +85,55 @@ p {
     
 }
 
+.title-meal {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px; 
+    text-align: center;
+    color: purple;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
 .image-meal {
     width: 300px; 
     height: 180px; 
     border-radius: 10px;
     margin-left: 100px;
+    justify-content: center;
 }
 
-.title-meal {
-    font-size: 25px; 
-    text-align: center;
-    color: purple;
-    margin-top: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 25px;
+@media only screen and (max-width: 600px) {
+    .search-box {
+        width: 80vw; 
+    }
+
+    .search-button {
+        width: 30vw;
+    }
+
+    .random-title {
+        font-size: 20px; 
+    }
+
+    .meall {
+        width: 90%; 
+        margin: 0 auto; 
+    }
+
+    .image-meal {
+        width: 100%;
+        height: auto; 
+        margin: 0 auto; 
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .search-box {
+        width: 90vw; 
+    }
+
+    .search-button {
+        width: 40vw; 
+    }
 }
