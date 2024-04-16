@@ -7,24 +7,31 @@
     <link rel="stylesheet" href="style.css">    
 </head>
 <body bgcolor="lightgreen">
-    <div class = "header">
-        
+    <div class="header">
         <h1>WELCOME TO SIMPLY FOOD</h1><br>
         <p>Simply Food is a website full of easy and tasty recipes for every day. From quick dinners to special treats, they've got you covered with simple instructions and helpful pictures. Whether you're new to cooking or a pro, you'll find lots of yummy ideas to try. It's a great place to find inspiration and join a friendly cooking community!</p>
     </div>
-    <div id = "searchfood">
+    <div id="searchfood">
         <form>
-            <input type="text" placeholder="Search" class="search-box" id = "search-barr">
+            <input type="text" placeholder="Search" class="search-box" id="search-barr">
             <button type="submit" class="search-button">Search Here</button>
         </form>
     </div>
     <div class="random">
-        <img src ="" alt = "img" id = "random-img" class = "food-image">
-        <h2 class = "random-title"><span id = "random-title"></span></h2>
+        <img src="" alt="img" id="random-img" class="food-image" onclick="openModal()">
+        <h2 class="random-title"><span id="random-title"></span></h2>
     </div>
-    <div class = "food-search">
-        
-    </div>    
+    <div class="food-search">
+    </div>
+
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <ul id="ingredient-list"></ul>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
